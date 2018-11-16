@@ -1,7 +1,6 @@
 package snake;
 
 import java.awt.EventQueue;
-
 import java.awt.Image;
 
 import javax.swing.JFrame;
@@ -109,9 +108,7 @@ public class SnakeandLadders {
 						Player1Pos+=ranNum;
 					}
 					if(Player1Pos==99) {
-						frame.setVisible(false);
-						ScoreBoard sc = new ScoreBoard(1);
-						sc.setVisible(true);
+						System.out.println("Player 1 Won the game");
 					}
 				}
 				else {
@@ -120,9 +117,7 @@ public class SnakeandLadders {
 						Player2Pos+=ranNum;
 					}
 					if(Player2Pos==99) {
-						frame.setVisible(false);
-						ScoreBoard sc = new ScoreBoard(2);
-						sc.setVisible(true);
+						System.out.println("Player 2 Won the game");
 					}
 				}
 				for(int x=0;x<snakes.length;x++){
@@ -148,7 +143,6 @@ public class SnakeandLadders {
 		btnNewButton.setFont(new Font("Segoe UI", Font.PLAIN, 24));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
 			}
 		});
 		btnNewButton.setBounds(752, 257, 205, 50);
